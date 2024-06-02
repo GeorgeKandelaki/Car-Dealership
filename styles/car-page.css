@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --dark-charcoal: #111a24;
+  --bright-yellow: #f8ee00;
+  --red: #ff8080;
+  --dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark-charcoal);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+}
+
+.main-frame {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mg-bottom-md {
+  margin-bottom: 3.6rem;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER  */
+/* //////////////////////////////////////////// */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 3.2rem;
+  background-color: var(--red);
+  color: var(--dark);
+}
+
+.logo,
+.nav__item {
+  color: inherit;
+  font-size: 2.6rem;
+  transition: color 0.3s;
+}
+
+.logo {
+  font-size: 3.6rem;
+}
+
+.logo:hover,
+.nav__item:hover {
+  text-transform: uppercase;
+  color: white;
+}
+
+/* //////////////////////////////////////////// */
+/* CAR  */
+/* //////////////////////////////////////////// */
+
+.car {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #9be15d, #00e3ae);
+  border-radius: 3rem;
+  color: var(--dark-charcoal);
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.img-container img:hover {
+  transform: scale(1.08);
+}
+
+.car__info {
+  padding: 4.8rem;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car__name {
+  font-size: 4rem;
+}
+
+.car__price {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* //////////////////////////////////////////// */
+/* FOOTER */
+/* //////////////////////////////////////////// */
+.footer {
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.8rem;
+}
+
+.contact-us {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+ion-icon {
+  color: white;
+  font-size: 3.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+ion-icon:hover {
+  color: var(--dark);
+  transform: scale(1.3);
+}
