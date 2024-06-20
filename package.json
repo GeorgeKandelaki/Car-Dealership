@@ -1,0 +1,11 @@
+{
+  "name": "car-dealership",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./JS/index.js"
+  },
+  "author": "George Kandelaki",
+  "license": "ISC",
+  "description": ""
+}

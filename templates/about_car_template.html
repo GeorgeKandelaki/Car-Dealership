@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <title>Car Catalog</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/car-page.css" />
   </head>
   <body>
     <header class="header mg-bottom-md">
       <div class="logo-contanier">
-        <p><a href="/index.html" class="logo">Home</a></p>
+        <p><a href="index.html" class="logo">Home</a></p>
       </div>
 
       <nav class="nav">
@@ -17,9 +17,26 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="main-heading bouncing-text">Available Cars</h1>
-      <section class="section-cars">{%OVERVIEW%}</section>
+    <main class="main-frame">
+      <div class="car">
+        <div class="img-container">
+          <img
+            class="car__img"
+            alt="image of an Lamborghini"
+            src="{%CARIMAGE%}"
+          />
+        </div>
+
+        <div class="car__info">
+          <div class="price-container mg-bottom-md">
+            <h1 class="car__name">{%CARMODEL%}</h1>
+            <span class="car__price">{%CARPRICE%}$</span>
+          </div>
+          <article class="car__description">
+            <p class="paragraph">{%DESCRIPTION%}</p>
+          </article>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
